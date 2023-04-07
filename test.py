@@ -12,9 +12,6 @@ def test_search(browser):
     elements = ya_search_page.check_navi_bar()
 
 
-    #for i in range(len(elements)):
-    assert "Картинки" != ''.join(elements)
-
-         #assert elements[i] != "Картинки"
+    assert ''.join(elements).find("Видео") > -1
     print("Такая кнопка есть")
     print(''.join(elements))
